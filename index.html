@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
 <body>
-<h1>Bộ đếm</h1>
-    <p id="counter">0</p>
-    <button id="btn">Nhấn vào đây</button>
 
-    <script src="script.js"></script>
+<h1>Đếm: <span id="counter">0</span></h1>
+
+<button onclick="increaseCounter()">Nhấn vào đây</button>
+
+<script>
+var count = 0; // khởi tạo giá trị ban đầu của đếm
+
+function increaseCounter() {
+  count++; // tăng giá trị đếm lên 1
+  document.getElementById("counter").textContent = count; // hiển thị giá trị đếm mới lên trang web
+}
+</script>
+
 </body>
 </html>
