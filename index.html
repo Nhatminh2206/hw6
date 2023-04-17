@@ -1,37 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Calculator</title>
-   </head>
-  <body>
-    <button onclick="calculate()">Calculate</button>
-    <div id="result"></div>
-    <script>
-      function calculate() {
-        var num1 = prompt("Enter first number:");
-        var num2 = prompt("Enter second number:");
-        var operator = prompt("Enter operator (+, -, *, /):");
-        var result;
-        if (operator == "+") {
-          result = parseInt(num1) + parseInt(num2);
-        } else if (operator == "-") {
-          result = parseInt(num1) - parseInt(num2);
-        } else if (operator == "*") {
-          result = parseInt(num1) * parseInt(num2);
-        } else if (operator == "/") {
-          result = parseInt(num1) / parseInt(num2);
-        } else {
-          result = "Invalid operator";
-        }
-        document.getElementById("result").innerHTML = "Result: " + result;
-      }
-    </script>
-  </body>
-  <style>
-    #result {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-  </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<h1>Bộ đếm</h1>
+    <p id="counter">0</p>
+    <button id="btn">Nhấn vào đây</button>
+
+    <script src="script.js"></script>
+</body>
 </html>
